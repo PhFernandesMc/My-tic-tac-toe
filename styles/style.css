@@ -1,0 +1,59 @@
+body {
+  text-align: center;
+  background-image: linear-gradient(to right, #025221, #451059);
+}
+
+h1 {
+  font-family: Arial, Helvetica, sans-serif;
+  color: antiquewhite;
+}
+
+.square {
+  width: 100px;
+  height: 100px;
+  background-color: beige;
+  border: 1px solid gray;
+  display: inline-block;
+}
+
+.o {
+  position: relative;
+}
+
+.o::after {
+  position: absolute;
+  content: url(../images/security.png);
+  line-height: 150px;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+
+.x {
+  position: relative;
+}
+
+.x::after {
+  position: absolute;
+  content: url(../images/oriental.png);
+  line-height: 150px;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+
+button {
+  margin-top: 10px;
+  padding: 10px 30px;
+  border: none;
+  border-radius: 5px;
+  background-color: orange;
+  display: none;
+  transition: 1s;
+}
+
+button:hover {
+  box-shadow: 0px 0px 8px orange;
+}
